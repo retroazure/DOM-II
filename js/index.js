@@ -108,3 +108,12 @@ nav.addEventListener("dblclick", (e)=>{
     e.stopPropagation;
 });
 
+const btns = document.querySelectorAll(".btn");
+
+btns.forEach((b)=> b.addEventListener("click", (e)=>{
+    gsap.to(e.target,  {duration: 3, rotationX: 360});
+}));
+
+
+
+
